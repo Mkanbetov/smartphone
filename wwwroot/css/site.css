@@ -1,0 +1,142 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+  color: white;
+}
+/* ===== Œ¡Ÿ»… ‘ŒÕ —¿…“¿ ===== */
+body {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+}
+
+/* ===== «¿√ŒÀŒ¬ » ===== */
+h2 {
+    color: white;
+    font-weight: 700;
+}
+
+/* ===== “¿¡À»÷¿ “Œ¬¿–Œ¬ ===== */
+.custom-table thead {
+    background-color: #0b3c49;
+    color: white;
+}
+
+.custom-table tbody tr {
+    background-color: #134e5e;
+    color: white;
+    transition: all 0.2s ease-in-out;
+}
+
+    .custom-table tbody tr:hover {
+        background-color: #1f6f78;
+    }
+
+/* =====  ¿–“Œ◊ ¿ ===== */
+.card {
+    border-radius: 16px;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+/* =====  ÕŒœ » ===== */
+.btn-success {
+    background-color: #0f9b8e;
+    border: none;
+    font-weight: 600;
+}
+
+    .btn-success:hover {
+        background-color: #0c7c71;
+    }
+
+.btn-info {
+    background-color: #1abc9c;
+    border: none;
+    color: #003333;
+    font-weight: 600;
+}
+
+    .btn-info:hover {
+        background-color: #16a085;
+        color: white;
+    }
+
+.btn-danger {
+    font-weight: 600;
+}
+.custom-table thead {
+    background-color: #0b3c49;
+    color: white;
+}
+
+.custom-table tbody tr {
+    background-color: #134e5e;
+    color: white;
+}
+
+    .custom-table tbody tr:hover {
+        background-color: #1f6f78;
+    }
+.custom-table thead {
+    background-color: #0b3c49;
+    color: white;
+}
+
+.custom-table tbody tr {
+    background-color: #134e5e;
+    color: white;
+}
+
+    .custom-table tbody tr:hover {
+        background-color: #1f6f78;
+    }
+.custom-table thead {
+    background-color: #0b3c49;
+    color: white;
+}
+
+.custom-table tbody tr {
+    background-color: #134e5e;
+    color: white;
+}
+
+    .custom-table tbody tr:hover {
+        background-color: #1f6f78;
+    }
+.list-group-item-dark {
+    background-color: #134e5e;
+    color: white;
+    border: none;
+    transition: all 0.2s;
+}
+
+    .list-group-item-dark:hover {
+        background-color: #1f6f78;
+    }
+
+a.text-white:hover {
+    color: #7fffd4; /* ËÁÛÏÛ‰Ì˚È ÔË Ì‡‚Â‰ÂÌËË */
+    text-decoration: none;
+}
+
+h2, h3 {
+    color: white;
+}
+
