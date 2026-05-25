@@ -1,0 +1,67 @@
+﻿@{
+    ViewData["Title"] = "Главная страница";
+}
+
+<div class="container mt-5">
+    <div class="jumbotron text-center bg-light p-5 rounded shadow-sm">
+        <h1 class="display-3 text-white mb-3">Добро пожаловать в наш магазин "SmartPhone"!</h1>
+        <p class="lead mb-4">
+            Здесь вы можете просматривать продукты, бренды и заказать любой товар. Всё удобно и быстро.
+        </p>
+        <a href="/Product/Index" class="btn btn-primary btn-lg mx-2">Смартфоны</a>
+        <a href="/Brand/Index" class="btn btn-success btn-lg mx-2">Бренды</a>
+        <a href="/Category/Index" class="btn btn-warning btn-lg mx-2 text-white">Категории</a>
+    </div>
+
+    <div class="row mt-5">
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm">
+                <img src="~/images/smartphone.jpg" class="card-img-top" alt="Смартфоны">
+                <div class="card-body">
+                    <h5 class="card-title text-white" >Смартфоны</h5>
+                    <p class="card-text text-white" >Просмотрите все доступные смартфоны и их характеристики.</p>
+                    <a href="/Product/Index" class="btn btn-primary">Перейти</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm">
+                <img src="~/images/brand.jpg" class="card-img-top" alt="Бренды">
+                <div class="card-body">
+                    <h5 class="card-title text-white">Бренды</h5>
+                    <p class="card-text text-white">Узнайте о брендах и их продуктах.</p>
+                    <a href="/Brand/Index" class="btn btn-success">Перейти</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm">
+                <img src="~/images/категории.jpg" class="card-img-top" alt="Категории">
+                <div class="card-body">
+                    <h5 class="card-title text-white">Категории</h5>
+                    <p class="card-text text-white">Выбирайте на свое усмотрение любой товар и заказывайте.</p>
+                    <a href="/Category/Index" class="btn btn-warning text-white">Перейти</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .jumbotron {
+        background: linear-gradient(135deg, grey 30%, black 70%);
+        color: white;
+    }
+
+    .card img {
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .card-title {
+        font-weight: bold;
+    }
+</style>
+

@@ -1,0 +1,13 @@
+﻿
+@model Smartphone.Models.Brand
+
+<h2>Удалить бренд</h2>
+
+<h4>Вы уверены, что хотите удалить этот бренд?</h4>
+<p>@Model.Name</p>
+
+<form asp-action="Delete" method="post">
+    <input type="hidden" asp-for="Id" />
+    <button type="submit" class="btn btn-danger">Удалить</button>
+    <a asp-action="Index" class="btn btn-secondary">Отмена</a>
+</form>

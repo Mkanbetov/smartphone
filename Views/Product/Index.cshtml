@@ -1,0 +1,66 @@
+﻿@model IEnumerable<Product>
+
+@{
+    ViewData["Title"] = "Товары";
+}
+
+<div class="container mt-5">
+
+    <!-- Заголовок -->
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="text-white">📱 Товары</h2>
+
+        <a asp-action="Create" class="btn btn-success btn-lg">
+            ➕ Добавить товар
+        </a>
+    </div>
+
+    <!-- Таблица -->
+    <div class="card shadow-lg border-0">
+        <div class="card-body p-0">
+            <table class="table table-hover mb-0 custom-table">
+                <thead>
+                    <tr>
+                        <th>Модель</th>
+                        <th>Цена (KGS)</th>
+                        <th>Бренд</th>
+                        <th>Категория</th>
+                        <th class="text-center">Действия</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var product in Model)
+                    {
+                        <tr>
+                            <td class="fw-bold">@product.Name</td>
+                            <td>@product.Price</td>
+                            <td>@product.Brand?.Name</td>
+                            <td>@product.Category?.Name</td>
+                            <td class="text-center">
+                                <a asp-action="Details"
+                                   asp-route-id="@product.Id"
+                                   class="btn btn-info btn-sm me-2">
+                                    Подробнее
+                                </a>
+                                <a asp-action="Edit"
+                                   asp-route-id="@product.Id"
+                                   class="btn btn-warning btn-sm me-1">
+                                    ✏ Редактировать
+                                </a>
+
+                                <a asp-action="Delete"
+                                   asp-route-id="@product.Id"
+                                   class="btn btn-danger btn-sm">
+                                    Удалить
+                                </a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+

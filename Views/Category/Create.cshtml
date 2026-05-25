@@ -1,0 +1,15 @@
+﻿@model Category
+
+<h2>Добавить категорию</h2>
+
+<form asp-action="Create" method="post">
+    <div class="form-group">
+        <label>Название категории</label>
+        <input asp-for="Name" class="form-control" />
+    </div>
+    <br />
+    <button type="submit" class="btn btn-success">Сохранить</button>
+    <a asp-action="Index" class="btn btn-secondary">Назад</a>
+</form>
+
+

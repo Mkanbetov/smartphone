@@ -1,0 +1,32 @@
+﻿@model Smartphone.Models.Product
+
+<h2>Добавить товар</h2>
+
+<form asp-action="Create" method="post">
+    <div class="form-group">
+        <label asp-for="Name"></label>
+        <input asp-for="Name" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Price"></label>
+        <input asp-for="Price" class="form-control" />
+    </div>
+     <div class="form-group">
+        <label asp-for="Battery"></label>
+        <input asp-for="Battery" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Memory"></label>
+        <input asp-for="Memory" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Brand</label>
+        <select asp-for="BrandId" class="form-control" asp-items="ViewBag.Brands"></select>
+    </div>
+    <div class="form-group">
+        <label>Category</label>
+        <select asp-for="CategoryId" class="form-control" asp-items="ViewBag.Categories"></select>
+    </div>
+    <button type="submit" class="btn btn-primary mt-2">Добавить</button>
+    <a asp-action="Index" class="btn btn-secondary mt-3">Back</a>
+</form>

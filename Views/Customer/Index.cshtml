@@ -1,0 +1,42 @@
+﻿@model IEnumerable<Customer>
+
+<h2 class="mb-4">Покупатели</h2>
+
+<a asp-action="Create" class="btn btn-success mb-3">
+    ➕ Добавить покупателя
+</a>
+
+<table class="table table-hover custom-table">
+    <thead>
+        <tr>
+            <th>ФИО</th>
+            <th>Электронная почта</th>
+            <th>Телефон</th>
+            <th style="width: 260px">Действия</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var customer in Model)
+        {
+            <tr>
+                <td>@customer.FullName</td>
+                <td>@customer.Email</td>
+                <td>@customer.Phone</td>
+                <td>
+                    <a asp-action="Edit"
+                       asp-route-id="@customer.Id"
+                       class="btn btn-info btn-sm me-2">
+                        ✏ Редактировать
+                    </a>
+
+                    <a asp-action="Delete"
+                       asp-route-id="@customer.Id"
+                       class="btn btn-danger btn-sm">
+                        🗑 Удалить
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+

@@ -1,0 +1,26 @@
+﻿@model Smartphone.Models.Order
+@{
+    ViewData["Title"] = "Новый заказ";
+}
+
+<h2>Новый заказ: @ViewBag.Product.Name</h2>
+
+<form asp-action="Create" method="post">
+    <input type="hidden" name="productId" value="@ViewBag.Product.Id" />
+
+    <div class="form-group">
+        <label>Выберите покупателя</label>
+        <select name="customerId" class="form-control" asp-items="ViewBag.Customers"></select>
+    </div>
+
+    <button type="submit" class="btn btn-success mt-2">Подтвердить заказ</button>
+    <a asp-controller="Product" asp-action="Index" class="btn btn-secondary mt-2">Назад</a>
+</form>
+
+@if (TempData["Message"] != null)
+{
+    <div class="alert alert-success mt-3">
+        @TempData["Message"]
+    </div>
+}
+

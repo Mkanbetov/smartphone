@@ -1,0 +1,26 @@
+﻿@{
+    ViewData["Title"] = "Заказ принят";
+}
+
+<div class="container mt-5 text-center">
+    <div class="card shadow p-5">
+        <h2 class="text-success mb-3">✅ Заказ принят!</h2>
+
+        <p class="fs-5" text-white >
+            Спасибо за ваш заказ.<br />
+            Наш менеджер свяжется с вами в ближайшее время.<br />
+            Пожалуйста, ожидайте подтверждение.
+        </p>
+
+        <div class="mt-4">
+            <a asp-controller="Product" asp-action="Index" class="btn btn-primary me-2">
+                Вернуться к товарам
+            </a>
+
+            <a asp-controller="Home" asp-action="Index" class="btn btn-secondary">
+                На главную
+            </a>
+        </div>
+    </div>
+</div>
+
